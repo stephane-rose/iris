@@ -73,16 +73,39 @@
 
 						</br></br>
 						<!-- Suggestions -->
-						<div id="suggestions">
+						<div id="suggestions1">
 							<h1 style="color:white">Are you looking for this ?</h1>
 							<ul class="nav nav-pills">
-								<li style="margin-left:20px;" id="presentation" role="presentation"><a href="graph.html">Word 1</a></li>
-								<li id="presentation" role="presentation"><a href="search-result.html">Word 2</a></li>
-								<li id="presentation" role="presentation"><a href="search-result.html">Word 3</a></li>
 
-								<li style="margin-left:40px;" id="presentation" role="presentation"><a href="search-result.html">Word 4</a></li>
-								<li id="presentation" role="presentation"><a href="search-result.html">Word 5</a></li>
-								<li id="presentation" role="presentation"><a href="search-result.html">Word 6</a></li>
+
+								<div class="btn-group">
+  									<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+    									Action
+    									<span class="caret"></span>
+								  	</a>
+								  	<ul class="dropdown-menu">
+								    <!-- dropdown menu links -->
+								  </ul>
+								</div>
+
+								<li style="margin-left:10px;" id="presentation" role="presentation"><a href="graph.html">Word 1</a></li>
+								<li style="margin-left:10px;" id="presentation" role="presentation"><a href="search-result.html">Word 2</a></li>
+								<li style="margin-left:10px;" id="presentation" role="presentation"><a href="search-result.html">Word 3</a></li>
+								<li style="margin-left:10px;" id="presentation" role="presentation"><a href="search-result.html">Word 4</a></li>
+								<li style="margin-left:10px;" id="presentation" role="presentation"><a href="search-result.html">Word 5</a></li>
+								<li style="margin-left:10px;" id="presentation" role="presentation"><a href="search-result.html">Word 6</a></li>
+							</ul>
+						</div>
+
+						<div id="suggestions2">
+							<h1 style="color:white">Are you looking for this ?</h1>
+							<ul class="nav nav-pills">
+								<li style="margin-left:10px;" id="presentation" role="presentation"><a href="graph.html">Word 1</a></li>
+								<li style="margin-left:10px;" id="presentation" role="presentation"><a href="search-result.html">Word 2</a></li>
+								<li style="margin-left:10px;" id="presentation" role="presentation"><a href="search-result.html">Word 3</a></li>
+								<li style="margin-left:10px;" id="presentation" role="presentation"><a href="search-result.html">Word 4</a></li>
+								<li style="margin-left:10px;" id="presentation" role="presentation"><a href="search-result.html">Word 5</a></li>
+								<li style="margin-left:10px;" id="presentation" role="presentation"><a href="search-result.html">Word 6</a></li>
 							</ul>
 						</div>
 
@@ -157,15 +180,32 @@
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
 			<script>
-				$('.form-control.input-lg').keypress(function(e){
+				// Hide the suggestions
+				$("#suggestions1").hide();
+				$("#suggestions2").hide();
+				$('.form-control.input-lg').keyup(function(e){
 				    var keyCode = e.keyCode || e.which;
+				    // Enter pressed
 				    if (keyCode == '13'){
 				      // Enter pressed
 				      if ($('.form-control.input-lg').val() !== "") {
 						window.location.href = "search-result.html";
 				      }
 				      return true;
+				    } else {
+						if ($('.form-control.input-lg').val() === "biometric") {
+							$("#suggestions1").show();
+							$("#suggestions2").hide();
+				      	} else if ($('.form-control.input-lg').val() === "fruit"){
+							$("#suggestions1").hide();
+							$("#suggestions2").show();
+				      	} else {
+				      		$("#suggestions1").hide();
+							$("#suggestions2").hide();
+				      	}
 				    }
+
+
 
 
 			  });

@@ -3195,3 +3195,10 @@
     border: solid;
     border-width: thin;
 }
+
+.nav-pills {
+	float:none;
+    display:inline-block;
+    vertical-align:middle;
+    margin-right:-4px
+}
