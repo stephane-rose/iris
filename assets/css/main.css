@@ -3189,3 +3189,9 @@
 #custom-search-input .glyphicon-search{
     font-size: 23px;
 }
+
+.nav-pills>li>a {
+    border-radius: 4px;
+    border: solid;
+    border-width: thin;
+}

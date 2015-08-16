@@ -71,11 +71,23 @@
 							</div>
 						</div>
 
-						<!-- Suggestions -->
-
-
 						</br></br>
-						<a href="search-result.html"><input type="submit" value ="Go"></a>
+						<!-- Suggestions -->
+						<div id="suggestions">
+							<h1 style="color:white">Are you looking for this ?</h1>
+							<ul class="nav nav-pills">
+								<li style="margin-left:20px;" id="presentation" role="presentation"><a href="graph.html">Word 1</a></li>
+								<li id="presentation" role="presentation"><a href="search-result.html">Word 2</a></li>
+								<li id="presentation" role="presentation"><a href="search-result.html">Word 3</a></li>
+
+								<li style="margin-left:40px;" id="presentation" role="presentation"><a href="search-result.html">Word 4</a></li>
+								<li id="presentation" role="presentation"><a href="search-result.html">Word 5</a></li>
+								<li id="presentation" role="presentation"><a href="search-result.html">Word 6</a></li>
+							</ul>
+						</div>
+
+						<!-- Go button -->
+						<!-- <a href="search-result.html"><input type="submit" value ="Go"></a> -->
 						</div>
 					</body>
 				</section>
@@ -144,10 +156,19 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+			<script>
+				$('.form-control.input-lg').keypress(function(e){
+				    var keyCode = e.keyCode || e.which;
+				    if (keyCode == '13'){
+				      // Enter pressed
+				      if ($('.form-control.input-lg').val() !== "") {
+						window.location.href = "search-result.html";
+				      }
+				      return true;
+				    }
 
+
+			  });
+			</script>
 	</body>
 </html>
-
-<script>
-
-</script>
