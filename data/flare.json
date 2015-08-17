@@ -1,79 +1,79 @@
 {
- "name": "medicine",
+ "name": "Medicine",
  "children": [
   {
-   "name": "infants", "size" : 600,
+   "name": "Infants", "size" : 600,
    "children": [
     {
-     "name": "emotionnal expression", "size" : 600,
+     "name": "Emotionnal expression", "size" : 600,
      "children": [
-      {"name": "heart rate", "size" : 600},
-      {"name": "breathing rate", "size" : 600},
-      {"name": "brain activity monitoring (EEG)", "size" : 600,
+      {"name": "Heart rate", "size" : 600},
+      {"name": "Breathing rate", "size" : 600},
+      {"name": "Brain activity monitoring (EEG)", "size" : 600,
         "children": [
-          {"name": "near infrared spectroscopy", "size" : 600},
-          {"name": "effort tests", "size" : 600},
-          {"name": "sleep wake cycle monitoring", "size" : 600},
-          {"name": "polysomnography", "size" : 600},
-          {"name": "phone oximeters", "size" : 600},
-          {"name": "screening tool", "size" : 600},
+          {"name": "Near infrared spectroscopy", "size" : 600},
+          {"name": "Effort tests", "size" : 600},
+          {"name": "Sleep wake cycle monitoring", "size" : 600},
+          {"name": "Polysomnography", "size" : 600},
+          {"name": "Phone oximeters", "size" : 600},
+          {"name": "Screening tool", "size" : 600},
           {"name": "EEG", "size" : 600},
-          {"name": "eye-gaze monitoring", "size" : 600}
+          {"name": "Eye-gaze monitoring", "size" : 600}
         ]
       },
-      {"name": "weight", "size" : 600},
-      {"name": "growth rate", "size" : 600},
-      {"name": "academic abilities", "size" : 600},
-      {"name": "motor skills", "size" : 600},
-      {"name": "brain development", "size" : 600},
-      {"name": "sleep apnea", "size" : 600},
-      {"name": "muscle tension", "size" : 600},
-      {"name": "vital signs", "size" : 600}
+      {"name": "Weight", "size" : 600},
+      {"name": "Growth rate", "size" : 600},
+      {"name": "Academic abilities", "size" : 600},
+      {"name": "Motor skills", "size" : 600},
+      {"name": "Brain development", "size" : 600},
+      {"name": "Sleep apnea", "size" : 600},
+      {"name": "Muscle tension", "size" : 600},
+      {"name": "Vital signs", "size" : 600}
      ]
     },
     {
-     "name": "cognitive function impairment", "size" : 600
+     "name": "Cognitive function impairment", "size" : 600
     },
     {
-     "name": "malnutrition", "size" : 600
+     "name": "Malnutrition", "size" : 600
     },
     {
-     "name": "colic", "size" : 600
+     "name": "Colic", "size" : 600
     },
     {
-     "name": "neuropsychological deficits", "size" : 600
+     "name": "Neuropsychological deficits", "size" : 600
     },
     {
-     "name": "affective disorder", "size" : 600
+     "name": "Affective disorder", "size" : 600
     },
     {
-     "name": "obstructive sleep apnea", "size" : 600
+     "name": "Obstructive sleep apnea", "size" : 600
     },
     {
-     "name": "sleep disorder", "size" : 600
+     "name": "Sleep disorder", "size" : 600
     },
     {
-     "name": "coronary heart disease", "size" : 600
+     "name": "Coronary heart disease", "size" : 600
     },
     {
-     "name": "eating disorder", "size" : 600
+     "name": "Eating disorder", "size" : 600
     },
     {
-     "name": "autism spectrum disorders", "size" : 600
+     "name": "Autism spectrum disorders", "size" : 600
     },
     {
-     "name": "speech impairment", "size" : 600
+     "name": "Speech impairment", "size" : 600
     }
    ]
   },
   {
-    "name":"psychology", "size" : 200
+    "name":"Psychology", "size" : 200
   },
   {
-    "name":"public health", "size" : 200
+    "name":"Public health", "size" : 200
   },
   {
-    "name":"neuroscience", "size" : 200
+    "name":"Neuroscience", "size" : 200
   }
  ]
 }
