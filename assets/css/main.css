@@ -3202,3 +3202,8 @@
     vertical-align:middle;
     margin-right:-4px
 }
+
+.dropdown-menu > li > a {
+	border: none;
+	padding: 5px 20px;
+}
