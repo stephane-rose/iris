@@ -29,9 +29,9 @@
 					<!-- Nav -->
 						<nav id="nav">
 							<ul>
-								<li class="#" style="" ><a href="index.html"><img src="images/Iris_logo2.png" alt="Logo" style="width:76px;height:20px;">
+								<li class="#" style="" ><a href="#"><img src="images/Iris_logo2.png" alt="Logo" style="width:76px;height:20px;">
 								</a></li>
-								<li class="current"><a href="index.html">Home</a></li>
+								<li class="current"><a href="#">Home</a></li>
 								<li><a href="#">Product</a></li>
 								<li><a href="#">Toolkit</a></li>
 								<li><a href="#">Contact Us</a></li>
@@ -279,7 +279,7 @@
 			<script src="assets/js/main.js"></script>
 			<script>
 				// Init the view
-				if ($('.form-control.input-lg').val() === "medicine") {
+				if ($('.form-control.input-lg').val() === "medicine" || $('.form-control.input-lg').val() === "early childhood development") {
 							$("#suggestions1").show();
 							$("#suggestions2").hide();
 							$("#suggestions3").hide();
@@ -326,7 +326,7 @@
 				      }
 				      return true;
 				    } else {
-						if ($('.form-control.input-lg').val() === "medicine") {
+						if ($('.form-control.input-lg').val() === "medicine" || $('.form-control.input-lg').val() === "early childhood development") {
 							$("#suggestions1").show();
 							$("#suggestions2").hide();
 							$("#suggestions3").hide();
@@ -366,7 +366,7 @@
 					if ($('.form-control.input-lg').val() !== "" && ($('.form-control.input-lg').val() === "medicine" ||
 						$('.form-control.input-lg').val() === "public health" ||
 						$('.form-control.input-lg').val() === "psychology" ||
-						$('.form-control.input-lg').val() === "neuroscience")) {
+						$('.form-control.input-lg').val() === "neuroscience" || $('.form-control.input-lg').val() === "early childhood development")) {
 						window.location.href = "representation_sunburst.html";
 					} else if ($('.form-control.input-lg').val() !== "") {
 				      	$("#nothing").show();
